@@ -1,7 +1,16 @@
 // 1 - Crie a função ligarDesligar, que ligue e desligue um motor de um carro.
 
+function ligarDesligar(estado) {
+  if (estado === 'ligado') {
+    console.log('O motor está desligado');
+    return 'desligado';
+  }
+  console.log('O motor está ligado');
+  return 'ligado';
+}
 
-// 2 - Crie a função circleArea, que calcule a área de um círculo. 
+console.log(ligarDesligar('desligado'))
+// 2 - Crie a função circleArea, que calcule a área de um círculo.
 
 
 // 3 - Crie a função longestWord, que receba uma frase como parâmetro e retorne a maior palavra da frase.
