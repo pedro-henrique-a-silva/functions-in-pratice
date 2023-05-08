@@ -18,6 +18,18 @@ function circleArea(raio) {
 // console.log(circleArea(5));
 // 3 - Crie a função longestWord, que receba uma frase como parâmetro e retorne a maior palavra da frase.
 
+function longestWord(frase) {
+  const arrayFrase = frase.split(' ');
+  let maiorPalavra = arrayFrase[0];
+  for (let palavra of arrayFrase) {
+   if (palavra.length > maiorPalavra.length) {
+      maiorPalavra = palavra;
+   } 
+  }
+  return maiorPalavra;
+}
+
+console.log(longestWord('Eu estudo na Trybe com muita dedicação'));
 
 // Não modifique as linhas abaixo
 module.exports = {
