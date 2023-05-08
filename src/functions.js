@@ -22,9 +22,9 @@ function longestWord(frase) {
   const arrayFrase = frase.split(' ');
   let maiorPalavra = arrayFrase[0];
   for (let palavra of arrayFrase) {
-   if (palavra.length > maiorPalavra.length) {
+    if (palavra.length > maiorPalavra.length) {
       maiorPalavra = palavra;
-   } 
+    }
   }
   return maiorPalavra;
 }
